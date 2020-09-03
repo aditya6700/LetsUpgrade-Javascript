@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASS-2_2</title>
+    <script>
+        function ques2(){
+            let minute = document.getElementById("utime").value;
+            if(isNaN(minute))
+                document.getElementById("inst").innerHTML = "enter only numbers and try again";
+            else
+                document.getElementById("inst").innerHTML = `Given minutes in seconds are ${minute * 60} `;
+            document.getElementById("utime").value="";
+        }
+    </script>
+</head>
+<body>
+    <div class="answer" style="padding:4rem;justify-content:center">
+        <h2>Question-2</h2>
+        <p style="font-size:large">Program to convert minutes to seconds <br> 
+            enter minutes and click on submit</p>
+
+        <label for="utime">enter minutes: </label>
+        <input type="text" id ="utime"> 
+        <button id="q2" onclick="ques2()">submit</button><br>
+        <h3 id="inst"></h3>
+    </div>
+</body>
+</html>
