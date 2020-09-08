@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div{
+    padding: 12rem;
+    float: left;
+    display: flex;
+}
+
+input{
+    padding: 8px 10px;
+    border: 2px solid black;
+    font-size: medium;
+    background-color: antiquewhite;
+}
