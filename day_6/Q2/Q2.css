@@ -1,0 +1,27 @@
+td, th { 
+    padding: 5px; 
+    text-align:center; 
+    text-transform: capitalize; 
+} 
+.table_div{
+margin: 8rem;
+margin-top: 2rem;
+}
+.header, .addArr{
+ margin-top: 3rem;
+ margin-bottom: 0;
+ padding-left: 8rem;
+}
+.deleteArr{
+margin-top: 1rem;
+margin-bottom: 0;
+padding-left: 8rem;
+}
+input{
+height: 30px;
+}
+
+span{
+padding-left: 1rem;
+padding-right: 1rem;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="./Q2.css">
+</head>
+<body>
+    
+     <div class="header">
+         <h1> Question 2</h1>
+     </div>
+
+     <div class="addArr col-md-12">
+         <h4>Add Data</h4>
+         <form id="addData" onsubmit="addData(event)">
+            <input type="text"   required  id="name" placeholder="name">
+            <input type="number" required  id="bus_no" placeholder="bus no">
+            <input type="text"   required  id="source" placeholder="source">
+            <input type="text"   required  id="destination" placeholder="destination">
+            <input type="number" required  id="passcap" placeholder="passanger capacity">
+            <button class="btn btn-outline-dark" type="submit">Add Data</button>
+         </form>
+    </div>
+
+    <div class="deleteArr col-md-8">
+        <h4>Search Data</h4>
+        <input type="text" required  name="0"   class="search" placeholder="source" onkeyup="searchArray(event)">
+        <input type="text" name="1"  class="search" placeholder="destination" onkeyup="searchArray(event)">
+    </div>
+
+      <div class="table_div">      
+    <table class="mytable table table-bordered border-primary table-hover table-sm">
+        <thead>
+            <tr>
+              <th scope="col">S.No</th>
+              <th scope="col"> <span> Name </span> </th>
+              <th scope="col">Bus Number</th>
+              <th scope="col">Source</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Passanger Capacity</th>
+              <th scope="col">Options</th>
+            </tr>
+          </thead>
+          <tbody class="tableData">
+          </tbody>
+      </table>
+    </div>
+    <script src="Q2.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <style>
+        td, th { 
+            padding: 5px; 
+            text-align:center; 
+                  
+       } 
+       .table_div{
+        margin: 8rem;
+        margin-top: 2rem;
+    
+      }
+     .header, .deleteArr{
+         margin-top: 3rem;
+         margin-bottom: 0;
+         padding-left: 8rem;
+     }
+     input{
+         height: 2rem;
+     }
+   
+    </style>
+</head>
+<body>
+    
+     <div class="header">
+         <h1> Question 1</h1>
+     </div>
+     <div class="deleteArr col-md-8">
+         
+    <input type="text" required  name="0"   class="search" placeholder="name" onkeyup="searchArray(event)">
+    <input type="text" name="1"  class="search" placeholder="city" onkeyup="searchArray(event)">
+    
+
+     </div>
+      <div class="table_div">      
+    <table class="mytable table table-bordered border-primary table-hover table-sm">
+        <thead>
+            <tr>
+              <th scope="col">S.No</th>
+              <th scope="col">Name</th>
+              <th scope="col">Age</th>
+              <th scope="col">City</th>
+              <th scope="col">Salary</th>
+              <th scope="col">Options</th>
+            </tr>
+          </thead>
+          <tbody class="tableData">
+          </tbody>
+      </table>
+    </div>
+    <script src="Q1.js"></script>
+</body>
+</html>
