@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Black Market</title>
+        <link rel="stylesheet" href="./bootstrap.min.css">
+        <script src="./bootstrap.bundle.js"></script>
+        <link rel="stylesheet" href="index.css">
+        
+    </head>
+
+    <body >
+        <div class="container-fluid nav_bg mb-4">
+            <div class="rows">
+                <div class='col-12 mx-auto'>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                        <h2 class="navbar-brand"> Black Market </h2>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="form-group ml-auto col-md-10"
+                            id="myform">
+                            <div class="row">
+                                <div class="form-group col-md-2">
+                                    <label for="min">Minimum Price</label>     
+                                    <input name="min" id="min" placeholder="min price"> 
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="max">Maximum Price</label>     
+                                    <input name="max" id="max" placeholder="max price"> 
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <br />
+                                    <button class="btn btn-outline-primary" onclick="filterpro(event)"> Filter </button>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="searchpro">Search Product</label>     
+                                    <input name="searchpro" id="searchpro" onkeyup="searchprod(this.value)" placeholder="search"> 
+                                </div>
+                                <div class=" col-md-2">
+                                    <br />
+                                    <a href="#cart" id="cartimg" class="btn btn-outline-light"> </a>  
+                                </div>   
+                        </form>  
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class='col-12 mx-auto'> 
+                    <div class="row" id="bCard">
+                    </div>
+                </div>
+            </div>  
+        </div>  
+
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class='col-12 mx-auto'> 
+                    <div class="row" id="cart">
+                    
+                        
+                    </div>
+                </div>
+            </div>  
+        </div> 
+
+        <script src="shopping.js"></script>
+    </body>
+</html>
